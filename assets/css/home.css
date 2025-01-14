@@ -1,0 +1,195 @@
+.main-content {
+  background-image: url("/assets/img/latar_farid.png");
+  background-size: 120%; /* Makes the image cover the entire container */
+  background-position-y: 55%; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.highlighted {
+  font-weight: bold;
+  padding: 5px 15px;
+  background-color: #cd8282; /* Light background color */
+  color: rgb(0, 0, 0);
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+.navbar a:hover:before,
+.nabar li:hover > a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.navbar li:hover > a,
+.navbar .active,
+.navbar .active:focus {
+  color: var(--nav-hover-color);
+}
+
+.main-menu ul {
+  gap: 20px;
+}
+.main-menu ul h4,
+.main-menu h1 {
+  color: white;
+}
+
+.main-menu ul li a {
+  text-decoration: none; /* Remove default underline */
+  color: white; /* Set the color of the text */
+  padding-bottom: 5px; /* Optional: space for the slider */
+  position: relative; /* Required for positioning the slider */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.main-menu ul li a::after {
+  content: ""; /* Create an empty element */
+  position: absolute; /* Position the slider */
+  bottom: 0; /* Place it at the bottom of the text */
+  left: 0; /* Align with the left edge of the text */
+  width: 100%; /* Make the slider span the full width of the text */
+  height: 3px; /* Height of the underline/slider */
+  background-color: #cd8282; /* Color of the underline */
+  transform: scaleX(0); /* Start with the underline hidden */
+  transform-origin: bottom right; /* Set the origin of the scaling */
+  transition: transform 0.3s ease; /* Smooth transition for slider */
+  top: 35px;
+}
+
+.main-menu ul li a:hover::after {
+  transform: scaleX(1); /* Show the slider when hovered */
+  transform-origin: bottom left; /* Animate from left to right */
+}
+
+.main-menu ul li a:hover {
+  color: #cd8282; /* Optional: Change text color on hover */
+}
+
+.main-menu .unduh {
+  padding: 5px 15px;
+  background-color: #cd8282; /* Light background color */
+  color: black;
+}
+
+.future-engineer {
+  color: white;
+  padding-left: 20px;
+  margin-top: -20px;
+}
+.medsos {
+  display: flex;
+  justify-content: center; /* Pusatkan secara horizontal */
+  align-items: center; /* Pusatkan secara vertikal */
+  margin-top: 45px; /* Berikan sedikit jarak dari elemen sebelumnya */
+  gap: 15px; /* Berikan jarak antar ikon media sosial */
+}
+
+.medsos a {
+  font-size: 30px; /* Ukuran ikon */
+  color: white; /* Warna ikon */
+  text-decoration: none; /* Hapus garis bawah */
+}
+
+.medsos span h4 {
+  align-content: center;
+  color: rgb(0, 0, 0);
+  margin-top: 5px;
+  margin-left: 15px;
+  padding: 10px;
+  background-color: #cd8282;
+}
+
+@media (min-width: 988px) {
+  .future-engineer {
+    display: none;
+  }
+  .dropdown {
+    display: none;
+  }
+}
+
+/* Show navbar only on small and medium screens */
+@media (max-width: 988px) {
+  .main-content {
+    background-image: url("/assets/img/latar_farid.png");
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position-x: 55%;
+  }
+
+  .main-menu ul {
+    gap: 10px;
+  }
+
+  .main-menu h1 {
+    font-size: 1.5rem; /* Ukuran teks untuk layar kecil */
+    padding-left: 10px;
+    color: white;
+    font-weight: 700;
+  }
+
+  .main-menu h4 {
+    font-size: 1rem; /* Ukuran teks untuk layar kecil */
+    padding: 0px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .highlighted {
+    font-weight: bold;
+    padding: 5px 15px;
+    background-color: #cd8282; /* Light background color */
+    color: rgb(0, 0, 0);
+  }
+
+  .btn {
+    color: white;
+    font-size: 20px; /* Ukuran tombol lebih kecil */
+  }
+
+  .dropdown {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+  .dropdown-menu {
+    background-color: transparent;
+    border: none;
+    text-align: end;
+  }
+
+  .dropdown-item {
+    color: white;
+  }
+
+  span .highlighted {
+    background-color: transparent; /* Menghapus warna latar belakang */
+    padding: 0px;
+    color: white;
+  }
+
+  .medsos {
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    margin-top: 10px; /* Berikan sedikit jarak dari elemen sebelumnya */
+    gap: 15px; /* Berikan jarak antar ikon media sosial */
+  }
+
+  .medsos a {
+    font-size: 25px; /* Ukuran ikon lebih kecil */
+    color: white; /* Warna ikon */
+    text-decoration: none; /* Hapus garis bawah */
+  }
+
+  .medsos span h4 {
+    align-content: center;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 10px;
+    background-color: #cd8282;
+    font-size: 12px;
+  }
+}
