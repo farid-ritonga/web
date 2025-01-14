@@ -44,8 +44,10 @@
 
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
   font-family: var(--default-font);
+  background-image: url("/assets/img/latar_gambar_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -67,12 +69,6 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--default-font);
-}
-
-body {
-  background-image: url("/assets/img/latar_gambar_1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /*--------------------------------------------------------------
