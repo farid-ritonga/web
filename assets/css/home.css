@@ -1,5 +1,5 @@
 .main-content {
-  background-image: url("/assets/img/latar_farid.png");
+  background-image: url("assets/img/latar_farid.png");
   background-size: 120%; /* Makes the image cover the entire container */
   background-position-y: 55%; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
