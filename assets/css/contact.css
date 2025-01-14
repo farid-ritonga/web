@@ -70,7 +70,7 @@ h6 {
 }
 
 body {
-  background-image: url("/assets/img/latar_gambar_1.jpg");
+  background-image: url("assets/img/latar_gambar_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
